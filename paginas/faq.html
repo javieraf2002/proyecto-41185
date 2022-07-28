@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Libreria Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="header">
         <img class="header__img" src="../imagenes/Logo-150x150.png" alt="Logo">
@@ -34,50 +39,107 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="faq">
-            <h1 class="faq__pregunta">
-                1 - ¿Qué formas de pago puedo aprovechar para realizar mi compra?
-            </h1>
-            <p class="faq__respuesta">
-                Exclusivamente a través de MercadoPago. Aceptamos todas las modalidades de MercadoPago: efectivo, tarjetas de débito y crédito. Consultá las promociones con tarjetas que tienen para ofrecerte con pagos en hasta 12 cuotas.
-            </p>
-            <h1 class="faq__pregunta">
-                2 - ¿Cómo se realizan los envíos?
-            </h1>
-            <p class="faq__respuesta">
-                Exclusivamente a través de MercadoEnvíos. No hacemos envíos contra reembolso.
-            </p>
-            <h1 class="faq__pregunta">
-                3 - ¿Dónde puedo recibir mi pedido?
-            </h1>
-            <p class="faq__respuesta">
-                Realizamos envíos a todo el país.
-            </p>
-            <h1 class="faq__pregunta">
-                4 - ¿Cuánto tarda en llegar el pedido?
-            </h1>
-            <p class="faq__respuesta">
-                La preparación de los pedidos puede demorar hasta 2 días hábiles a partir de la acreditación de tu pago. Luego, el plazo de entrega estimado y el costo del envío los podés calcular ingresando tu código postal en el casillero "Calculá el costo de envío" en el momento previo a la compra.
-            </p>
-            <h1 class="faq__pregunta">
-                5 - ¿Tengo que registrarme?
-            </h1>
-            <p class="faq__respuesta">
-                No es necesrio, pero al momento de realizar la compra te pediremos tus datos para realizar el envío. Si ya sos un usuario registrado solo tenés que entrar en tu cuenta y no será necesario ingresar nuevamente tus datos.
-            </p>
-            <h1 class="faq__pregunta">
-                6 - ¿Se pueden realizar cambios?
-            </h1>
-            <p class="faq__respuesta">
-                No podrás cambiar el producto por otro una vez adquirido, al ofertar estás asumiendo un compromiso de compra. Podés hacer todas las preguntas que consideres a través del mail info@abcd.com.ar a nuestro Departamento de Atención al Cliente a fin de elegir adecuadamente.
-            </p>
-            <h1 class="faq__pregunta">
-                7 - ¿Qué debo hacer si el producto no llega en buen estado?
-            </h1>
-            <p class="faq__respuesta">
-                Si considerás que el producto tiene alguna rotura, de acuerdo a la normativa nacional, tenés el derecho a hacer uso de la garantía oficial a través de nuestro Departamento de Atención al Cliente cuyos datos recibirás una vez finalizada la compra. Tenés hasta 10 días desde la fecha de recepción de tu compra, siempre que esté intacta, conservando la factura o remito de entrega. Para evitar inconvenientes es muy importante que al momento de recepción de la compra revises el buen estado de los productos antes de firmar el remito de entrega, ya que tu nombre, DNI y firma en el remito serán muestra de conformidad con el estado.
-            </p>
+    <main class="main__faq">
+        <h3 class="main__faq_h3">Preguntas Freuentes</h3>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="opcion1">
+                        1 ¿Qué formas de pago puedo aprovechar para realizar mi compra?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Exclusivamente a través de MercadoPago. Aceptamos todas las modalidades de MercadoPago: efectivo, tarjetas de débito y crédito. Consultá las promociones con tarjetas que tienen para ofrecerte con pagos en hasta 12 cuotas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                        2 ¿Cómo se realizan los envíos?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Exclusivamente a través de MercadoEnvíos. No hacemos envíos contra reembolso.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="opcion3">
+                        3 ¿Dónde puedo recibir mi pedido?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Realizamos envíos a todo el país.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="opcion4">
+                        4 - ¿Cuánto tarda en llegar el pedido?
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La preparación de los pedidos puede demorar hasta 2 días hábiles a partir de la acreditación de tu pago. Luego, el plazo de entrega estimado y el costo del envío los podés calcular ingresando tu código postal en el casillero "Calculá el costo de envío" en el momento previo a la compra.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="opcion5">
+                        5 - ¿Tengo que registrarme?
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        No es necesrio, pero al momento de realizar la compra te pediremos tus datos para realizar el envío. Si ya sos un usuario registrado solo tenés que entrar en tu cuenta y no será necesario ingresar nuevamente tus datos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="opcion6">
+                        6 - ¿Se pueden realizar cambios?
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        No podrás cambiar el producto por otro una vez adquirido, al ofertar estás asumiendo un compromiso de compra. Podés hacer todas las preguntas que consideres a través del mail info@abcd.com.ar a nuestro Departamento de Atención al Cliente a fin de elegir adecuadamente.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="opcion7">
+                        7 - ¿Qué debo hacer si el producto no llega en buen estado?
+                    </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si considerás que el producto tiene alguna rotura, de acuerdo a la normativa nacional, tenés el derecho a hacer uso de la garantía oficial a través de nuestro Departamento de Atención al Cliente cuyos datos recibirás una vez finalizada la compra. Tenés hasta 10 días desde la fecha de recepción de tu compra, siempre que esté intacta, conservando la factura o remito de entrega. Para evitar inconvenientes es muy importante que al momento de recepción de la compra revises el buen estado de los productos antes de firmar el remito de entrega, ya que tu nombre, DNI y firma en el remito serán muestra de conformidad con el estado.
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
@@ -96,5 +158,9 @@
         </div>
         <h5>Copyright © 2022 Javier. Diseño Web creado por Javier Frete.</h5>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
