@@ -1,3 +1,5 @@
+/***** BASE *****/
+
 *{
     text-decoration: none;
     list-style: none;
@@ -5,14 +7,24 @@
 	padding: 0;    
 }
 
-.main_contenedor{
-    display: flex;
-    justify-content: center;
+.header__titulo, .inicio__h2,  .font, .pago, .footer__titulo, .main_h1, .empresa_h1, .contacto__titulo, .main__faq_h3{
+    font-family: 'Dancing Script', cursive;
 }
 
-.main_h1{
-    text-align: center;
+.parpadeo{ 
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+  
+@keyframes parpadeo {  
+    0%   { opacity: 1.0; }
+    50%  { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+/***** HEADER *****/
 
 .header{
     background: #1B3131;
@@ -20,6 +32,12 @@
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header__img{
@@ -50,6 +68,25 @@
     padding-left: 20px;
 }
 
+.header__a:hover{
+    color:coral;
+}
+
+/***** MAIN INDEX *****/
+
+.main__index{
+    margin-top: 120px;
+}
+
+.main_contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.main_h1{
+    text-align: center;
+}
+
 .inicio{
     width: 100%;
     height: 600px;
@@ -70,13 +107,11 @@
 }
 
 .inicio__h2{
-    /* font-family: 'Dancing Script', cursive; */
     font-size: 80px;
     text-align: center;
 }
 
 .font{
-    /* font-family: 'Dancing Script', cursive; */
     font-size: 30px;
     text-align: center;
 }
@@ -115,24 +150,11 @@
     width: 50%;
 }
 
-.footer{
-    background: #1B3131;
-    color: beige;
-    text-align: center;
-}
+/***** MAIN MENU *****/
 
-.footer__titulo{
-    /* font-family: 'Dancing Script', cursive; */
-    font-size: 30px;
-}
-
-.footer__links{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.header__titulo, .inicio__h2,  .font, .pago, .footer__titulo{
-    font-family: 'Dancing Script', cursive;
+.main__menu
+{
+    margin-top: 120px;
 }
 
 .card {
@@ -180,6 +202,11 @@
 
 }
 
+/***** MAIN CONTACTO *****/
+
+.contacto{
+    margin-top: 120px;
+}
 .contacto__formulario{
     background:#1B3131;
     color: beige;  
@@ -241,23 +268,10 @@ button{
     border-radius: 10px;       
 }
 
-.faq{
-    background:#1B3131;
-    color: beige;  
-    width: 75%; 
-    height: 700px;
-    padding: 16px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 5.5);    
-    margin-right:auto;
-    margin-left:auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+/**** MAIN EMPRESA *****/
 
-.faq__pregunta{
-    padding: 10px;
+.main__empresa{
+    margin-top: 150px;
 }
 
 .ubicacion{
@@ -326,12 +340,76 @@ button{
     gap: 1rem;    
 }
 
+/***** MAIN FAQ ******/
+
 .main__faq{
     min-height: 300px;
+    margin-top: 150px;
 }
 
 .main__faq_h3{
     text-align: center;
+}
+
+.faq{
+    background:#1B3131;
+    color: beige;  
+    width: 75%; 
+    height: 700px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 5.5);    
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.faq__pregunta{
+    padding: 10px;
+}
+
+/***** FOOTER *****/
+
+.footer{
+    background: #1B3131;
+    color: beige;
+    text-align: center;
+}
+
+.footer__titulo{
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 30px;
+}
+
+.footer__links{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__links__animacion:hover{
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier();
+}
+
+@keyframes animacion {
+    0% { /* 0 Segundos */
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% { /* 2 Segundos */
+        opacity: 0;
+        background-color: olivedrab;
+    }
+    100% { /* 4 Segundos */
+        transform: rotate(360deg);
+        opacity: 1;
+    }
 }
 
 /* Tablet */
@@ -405,6 +483,10 @@ button{
     .faq__respuesta{
         font-size: 18px;
     }
+
+    .main__empresa{
+        margin-top: 250px;
+    }
 }
 
 /* Movil */
@@ -442,6 +524,7 @@ button{
         display: flex;
         flex-direction: column;
         align-content: center;
+        margin-bottom: 180px;
     }
 
     .contenedor1__texto{
@@ -504,5 +587,9 @@ button{
         grid-template-rows: repeat(5, 200px);
         align-content: stretch;
         height: auto;
+    }
+
+    .main__empresa{
+        margin-top: 250px;
     }
 }
