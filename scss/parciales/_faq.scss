@@ -1,0 +1,27 @@
+.main__faq{
+    min-height: 300px;
+    margin-top: 150px;
+}
+
+.main__faq_h3{
+    text-align: center;
+}
+
+.faq{
+    background:#1B3131;
+    color: beige;  
+    width: 75%; 
+    height: 700px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 5.5);    
+    margin-right:auto;
+    margin-left:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.faq__pregunta{
+    padding: 10px;
+}

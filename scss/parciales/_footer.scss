@@ -1,0 +1,39 @@
+.footer{
+    background: #1B3131;
+    color: beige;
+    text-align: center;
+}
+
+.footer__titulo{
+    /* font-family: 'Dancing Script', cursive; */
+    font-size: 30px;
+}
+
+.footer__links{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__links__animacion:hover{
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier();
+}
+
+@keyframes animacion {
+    0% { /* 0 Segundos */
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% { /* 2 Segundos */
+        opacity: 0;
+        background-color: olivedrab;
+    }
+    100% { /* 4 Segundos */
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}

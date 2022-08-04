@@ -4,24 +4,24 @@
     text-decoration: none;
     list-style: none;
     margin: 0;
-	padding: 0;    
+    padding: 0;    
 }
 
 .header__titulo, .inicio__h2,  .font, .pago, .footer__titulo, .main_h1, .empresa_h1, .contacto__titulo, .main__faq_h3{
-    font-family: 'Dancing Script', cursive;
+font-family: 'Dancing Script', cursive;
 }
 
 .parpadeo{ 
-    animation-name: parpadeo;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+animation-name: parpadeo;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
 }
   
 @keyframes parpadeo {  
-    0%   { opacity: 1.0; }
-    50%  { opacity: 0.0; }
-    100% { opacity: 1.0; }
+0%   { opacity: 1.0; }
+50%  { opacity: 0.0; }
+100% { opacity: 1.0; }
 }
 
 /***** HEADER *****/

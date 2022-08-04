@@ -1,0 +1,181 @@
+/* Tablet */
+@media screen and (max-width:1023px){
+    .header{
+        flex-direction: column;
+        justify-content: center;        
+        align-items: space-between; 
+    }
+
+    .header__titulo{
+        display: none;
+    }
+
+    nav{
+        margin-bottom: 20px;
+    }
+
+    .nav__ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .inicio{
+        width: 100%;
+        height: 300px;
+    }
+
+    .inicio__h2{
+        font-size: 40px;
+    }
+
+    .contenedor{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .borde-img{
+        height: 200px;
+        width: 300px;
+        padding: 0px;
+    }
+
+    .contenedor1{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .contenedor1__texto{
+        padding-bottom: 10px;
+    }
+
+    .card {
+        height: 350px;
+    }
+
+    .faq{
+        height: 900px;
+    }
+
+    .faq__pregunta{
+        font-size: 20px;
+    }
+
+    .faq__respuesta{
+        font-size: 18px;
+    }
+
+    .main__empresa{
+        margin-top: 250px;
+    }
+}
+
+/* Movil */
+@media screen and (max-width:599px){
+    .header{
+        flex-direction: column;
+        justify-content: flex-end;  
+    }
+
+    .header__titulo{
+        display: none;
+    }
+
+    nav{
+        margin-bottom: 20px;
+    }
+
+    .nav__ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .inicio{
+        width: 100%;
+        height: 300px;
+    }
+
+    .inicio__h2{
+        font-size: 40px;
+    }
+
+    .contenedor1{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 180px;
+    }
+
+    .contenedor1__texto{
+        padding-bottom: 30px;
+    }
+
+    .borde-img{
+        height: 200px;
+        width: 300px;
+        padding: 0px;
+    }
+
+    .pago__img{
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .main_contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto__formulario{
+        width: 100%;
+    }
+    .faq{
+        height: 900px;
+    }
+
+    .faq__pregunta{
+        font-size: 14px;
+    }
+
+    .faq__respuesta{
+        font-size: 12px;
+    }
+
+    .ubicacion{
+        width: 250px; 
+        height: 250px;    
+    }
+
+    .ubicacion__mapa{
+        width: 250px; 
+        height: 200px;    
+    }
+
+    .contenedor-instalaciones {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 200px);
+        align-content: stretch;
+        height: auto;
+    }
+
+    .contenedor-eventos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 200px);
+        align-content: stretch;
+        height: auto;
+    }
+
+    .main__empresa{
+        margin-top: 250px;
+    }
+}
