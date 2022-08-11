@@ -3,8 +3,8 @@
 }
 
 .ubicacion{
-    background:#1B3131;
-    color: beige;  
+    background: $miColorVerde;
+    color: $miColorBeige;  
     width: 600px; 
     height: 550px;
     padding: 16px;
@@ -34,7 +34,7 @@
 
 .contenedor-instalaciones{
     margin: 40px;
-    border: 3px solid lightgray;
+    border: 3px solid $miColorBeige;
     padding: 1rem;
     height: 450px;
     border-radius: 10px;
@@ -52,7 +52,7 @@
 
 .contenedor-eventos{
     margin: 40px;
-    border: 3px solid lightgray;
+    border: 3px solid $miColorBeige;
     padding: 1rem;
     height: 450px;
     border-radius: 10px;

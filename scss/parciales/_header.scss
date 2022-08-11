@@ -1,5 +1,5 @@
 .header{
-    background: #1B3131;
+    background: $miColorVerde;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -22,7 +22,7 @@
 .header__titulo{
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
-    color: beige;
+    color: $miColorBeige;
 }
 
 .nav__ul{
@@ -36,7 +36,7 @@
 }
 
 .header__a{
-    color: beige;
+    color: $miColorBeige;
     padding-left: 20px;
 }
 

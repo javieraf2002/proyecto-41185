@@ -6,7 +6,8 @@
 }
 
 .header__titulo, .inicio__h2,  .font, .pago, .footer__titulo, .main_h1, .empresa_h1, .contacto__titulo, .main__faq_h3{
-font-family: 'Dancing Script', cursive;
+// font-family: 'Dancing Script', cursive;
+font-family: $miFuente;
 }
 
 .parpadeo{ 
