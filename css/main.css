@@ -296,7 +296,8 @@ button {
     justify-content: center; }
   .inicio {
     width: 100%;
-    height: 300px; }
+    height: 300px;
+    margin-top: 270px; }
   .inicio__h2 {
     font-size: 40px; }
   .contenedor {
@@ -326,10 +327,20 @@ button {
   .faq__respuesta {
     font-size: 18px; }
   .main__empresa {
-    margin-top: 250px; } }
+    margin-top: 250px; }
+  .main_contenedor {
+    margin-top: 100px; }
+  .contacto {
+    margin-top: 250px; }
+  .main__faq {
+    margin-top: 300px; } }
 
 /* Movil */
 @media screen and (max-width: 599px) {
+  .main__faq {
+    margin-top: 300px; }
+  .contacto {
+    margin-top: 250px; }
   .header {
     flex-direction: column;
     justify-content: flex-end; }
@@ -342,7 +353,8 @@ button {
     justify-content: center; }
   .inicio {
     width: 100%;
-    height: 300px; }
+    height: 300px;
+    margin-top: 275px; }
   .inicio__h2 {
     font-size: 40px; }
   .contenedor1 {
@@ -365,7 +377,10 @@ button {
   .main_contenedor {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 100px; }
+  .main_contenedor {
+    margin-top: 100px; }
   .contacto__formulario {
     width: 100%; }
   .faq {
