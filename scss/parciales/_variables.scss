@@ -1,3 +1,51 @@
 $miFuente: 'Dancing Script', cursive;
 $miColorVerde: #1B3131;
 $miColorBeige: beige;
+$miColorBisque: bisque;
+$miColorBlue: blue;
+$miColorBlanco: #fbfbfb;
+$miColorCeleste: #0BA0F5;
+$miColorCoral: coral;
+
+$estilos_menu:(
+    colorfondo: black,
+    centrado: center
+);
+
+$estilos_contacto:(
+    borde: solid,
+    ancho: 1px,
+    margen: 10px
+);
+
+@mixin display-grid-center{
+    display: grid;
+    justify-content: center;
+    align-content: center;    
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 200px);
+}
+
+.empresa_h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+.empresa_h1--rojo{
+    @extend .empresa_h1;
+    color: red;
+}
+
+.empresa_h1--verde{
+    @extend .empresa_h1;
+    color: green;
+}
+
+.empresa_h1--coral{
+    @extend .empresa_h1;
+    color: coral;
+}
+
+
+
+
