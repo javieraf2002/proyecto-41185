@@ -49,8 +49,7 @@
 .header__img {
   height: 100px;
   width: 100px;
-  margin: 10px;
-  /* align-content: center; */ }
+  margin: 10px; }
 
 .header__titulo {
   font-family: 'Dancing Script', cursive;
@@ -62,9 +61,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding: 5px; */
-  margin-right: 20px;
-  /* width: 400px; */ }
+  margin-right: 20px; }
 
 .header__a {
   color: beige;
@@ -119,8 +116,7 @@
   height: 600px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  /* justify-content: center; */ }
+  align-items: center; }
 
 .contenedor1__texto {
   padding-bottom: 60px;
@@ -282,7 +278,6 @@ button {
 
 .empresa_p {
   text-align: center;
-  /* display: inline-block; */
   margin-left: 10px;
   margin-right: 10px; }
 
@@ -322,7 +317,6 @@ button {
   text-align: center; }
 
 .footer__titulo {
-  /* font-family: 'Dancing Script', cursive; */
   font-size: 30px; }
 
 .footer__links {
