@@ -1,28 +1,30 @@
 /* Tablet */
 @media screen and (max-width:1023px){
     .header{
-        flex-direction: column;
-        justify-content: center;        
-        align-items: space-between; 
+        flex-direction: row;
     }
 
     .header__titulo{
         display: none;
     }
 
-    nav{
+    .nav{
         margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: center;        
+        align-items: space-between; 
+
     }
 
     .nav__ul{
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
     }
 
     .inicio{
         width: 100%;
         height: 300px;
-        margin-top: 270px;
+        margin-top: 120px;
     }
 
     .inicio__h2{
@@ -72,54 +74,84 @@
     }
 
     .main__empresa{
-        margin-top: 250px;
+        margin-top: 140px;
     }
 
     .main_contenedor{
-        margin-top: 100px;
+        margin-top: 20px;
     }
     .contacto{
-        margin-top: 250px;
+        margin-top: 165px;
     }
 
     .main__faq{
-
-        margin-top: 300px;
+        margin-top: 165px;
     }
 }
 
 /* Movil */
 @media screen and (max-width:599px){
-    .main__faq{
-
-        margin-top: 300px;
-    }
-    .contacto{
-        margin-top: 250px;
-    }
-    
-    .header{
-        flex-direction: column;
-        justify-content: flex-end;  
-    }
-
     .header__titulo{
         display: none;
     }
 
-    nav{
-        margin-bottom: 20px;
+    .nav{
+        display: none;
+        background-color: $miColorVerde;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 168px;
     }
 
+    .header__icono{
+        display: block;
+    }
+
+    .icon__cerrar{
+        display: block;
+    }
+
+    .icon__cerrar:hover{
+        cursor: pointer;
+    }
+
+    .nav:target {
+        display: block;
+    }
+
+    .header{
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+        
+
+    .main__faq{
+        margin-top: 180px;
+    }
+    .contacto{
+        margin-top: 165px;
+    }
+    
     .nav__ul{
+        margin: 0px;
+        margin-top: 5px;
+        padding: 0px;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .header__a{
+        padding-left: 0px;
     }
 
     .inicio{
         width: 100%;
         height: 300px;
-        margin-top: 275px;
+        margin-top: 165px;
     }
 
     .inicio__h2{
@@ -154,7 +186,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .main_contenedor{
@@ -203,6 +235,14 @@
     }
 
     .main__empresa{
-        margin-top: 250px;
+        margin-top: 165px;
+    }
+
+    .main_contenedor{
+       margin-top: 10px;
+    }
+
+    .main__menu{
+        margin-top: 165px;
     }
 }

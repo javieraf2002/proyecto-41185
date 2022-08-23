@@ -12,6 +12,9 @@
     <link rel="shortcut icon" href="../imagenes/beer.png" type="image/x-icon"/>
     <title>Cerveza Artesanal Argentina - Empresa</title>
 
+    <!-- Vincular una libreria de iconos tipograficos - Jam Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
     <!-- Fuentes de Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +28,14 @@
 <body>
     <header class="header">
         <img class="header__img" src="../imagenes/Logo-150x150.png" alt="Logo">
+        
         <h1 class="header__titulo">Cerveza Artesanal</h1>
-        <nav>
+
+        <a href="#abierto" class="header__icono">
+            <span class="jam jam-menu">Menú</span>
+        </a>
+        
+        <nav class="nav" id="abierto">
             <ul class="nav__ul">
                 <li>
                     <a class="header__a" href="../index.html">Inicio</a>
@@ -44,7 +53,11 @@
                     <a class="header__a" href="./faq.html">Faq</a>
                 </li>
             </ul>
+            <a href="#cerrado" class="icon__cerrar">
+                <span class="jam jam-close-rectangle "></span>
+            </a>
         </nav>
+
     </header>
     <main class="main__empresa">
         <h1 class="empresa_h1 empresa_h1--coral parpadeo">Acerca de nosotros</h1>
