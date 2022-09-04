@@ -148,6 +148,15 @@
 .pago__img {
   width: 50%; }
 
+.tamanio {
+  width: 500px;
+  height: 500px; }
+
+.tam {
+  justify-content: center;
+  width: 540px;
+  margin-top: 50px; }
+
 .main__menu {
   margin-top: 120px; }
 
@@ -516,4 +525,13 @@ button {
   .main_contenedor {
     margin-top: 10px; }
   .main__menu {
-    margin-top: 165px; } }
+    margin-top: 165px; }
+  .tamanio {
+    width: 200px;
+    height: 200px; }
+  .tam {
+    justify-content: center;
+    width: 230px;
+    margin-top: 5px; }
+  .container {
+    height: 550px; } }
